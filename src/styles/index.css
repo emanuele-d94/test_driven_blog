@@ -1,0 +1,41 @@
+:root {
+    font-family: "Segoe UI", Calibri, sans-serif;
+    color: #24465c;
+    background: #e3f2fa;
+    font-synthesis: none;
+    line-height: 1.6;
+    --blue: #1479b5;
+    --blue-dark: #0d5b8a;
+    --ivory: #fffdf5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 280px;
+    min-height: 100vh;
+    background:
+        radial-gradient(ellipse at top left, #c6e6f8 0, transparent 55%),
+        linear-gradient(135deg, #eaf6fc, #d6ebf7);
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+::selection {
+    color: #123f5b;
+    background: #b7def5;
+}

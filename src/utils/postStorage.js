@@ -13,6 +13,6 @@ export function getPosts() {
 
 export function savePost(post) {
     let posts = getPosts()
-    posts.push(post)
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(posts))
+    let newPosts = [post,...posts]
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(newPosts))
 }

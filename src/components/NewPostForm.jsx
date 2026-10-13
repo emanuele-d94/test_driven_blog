@@ -30,8 +30,9 @@ export default function NewPostForm({ onSubmit }) {
     }
 
     return (
-        <div>
-            {error && <p role="alert">{error}</p>}
+        <div className="new-post-form">
+            <h2 className={'new-post-form-title'}>Create New Post</h2>
+            {error && <p className={'new-post-form-alert'} role="alert">{error}</p>}
             <form onSubmit={handleSubmit}>
                 <label htmlFor="title">Titolo</label>
                 <input id="title" type="text" value={title} onChange={e => setTitle(e.target.value)} />

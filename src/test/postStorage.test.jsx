@@ -18,14 +18,14 @@ describe('postStorage', () => {
         expect(getPosts()).toEqual([post])
     })
 
-    it('Aggiunge un post se c\'è già un\'elemento salvato',()=>{
+    it('Aggiunge un post in testa se c\'è già un\'elemento salvato',()=>{
         const post1 = { id: 1, title: 'Primo post', excerpt: 'Estratto', content: 'Contenuto' }
         const post2 = { id: 2, title: 'Secondo post', excerpt: 'Estratto', content: 'Contenuto' }
 
         savePost(post1)
         savePost(post2)
 
-        expect(getPosts()).toEqual([post1, post2])
+        expect(getPosts()).toEqual([post2,post1])
 
     })
 

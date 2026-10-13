@@ -33,7 +33,7 @@ describe('PostList', () => {
 
         render(<PostList posts={posts} />)
 
-        const titles = screen.getAllByRole('heading', { level: 1 })
+        const titles = screen.getAllByRole('heading', { level: 2 })
         expect(titles).toHaveLength(3)
     })
 
